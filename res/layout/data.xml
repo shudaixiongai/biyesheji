@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/data_lin"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="数字列表"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_number_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_number"
+            android:layout_marginTop="25dp"
+            android:text="学习日语数字系统的发音及阿拉伯数字间的转换" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_number_study"
+            android:background="#A9A9A9"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="日期列表"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_data_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_data"
+            android:layout_marginTop="25dp"
+            android:text="学习日期、星期、月份的表达方法" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_data_study"
+            android:background="#A9A9A9"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="时间列表"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="25dp"
+            android:text="学习时间、时刻的表达方法 " />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_time_study"
+            android:background="#A9A9A9"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>
