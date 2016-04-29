@@ -54,17 +54,14 @@ public class PianFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		return inflater.inflate(R.layout.pian_fragment, container, false);
 	}
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 		setview();
 	}
-
 
 	private void setview() {
 		imagerview = (ImageView) getActivity().findViewById(R.id.cursor);
@@ -86,7 +83,7 @@ public class PianFragment extends Fragment {
 		// lists.add(getActivity().getLayoutInflater().inflate(
 		// R.layout.viewpager3, null));
 		initeCursor();
-//		adapter = new ViewPagerAdapter(fragments);
+		// adapter = new ViewPagerAdapter(fragments);
 		viewPager = (ViewPager) getActivity().findViewById(R.id.viewPager);
 		viewPager.setAdapter(new myadapter(getActivity()
 				.getSupportFragmentManager()));
@@ -133,13 +130,11 @@ public class PianFragment extends Fragment {
 
 			@Override
 			public void onPageScrolled(int arg0, float arg1, int arg2) {
-				// TODO Auto-generated method stub
 
 			}
 
 			@Override
 			public void onPageScrollStateChanged(int arg0) {
-				// TODO Auto-generated method stub
 
 			}
 		});
@@ -148,7 +143,6 @@ public class PianFragment extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 				viewPager.setCurrentItem(0);
-
 			}
 		});
 		textview2.setOnClickListener(new OnClickListener() {
@@ -187,7 +181,6 @@ public class PianFragment extends Fragment {
 			// TODO Auto-generated method stub
 			return fragments.size();
 		}
-
 	}
 
 	private void initeCursor() {
